@@ -19,6 +19,7 @@ step：2 在pom.xml文件中加入spring-context容器
 很多开发者入门就直接接触的 SpringMVC，对 Spring 其实不是很了解，Spring 是渐进式的工具，并不具有很强的侵入性，它的模块也划分得很合理，即使你的应用不是 web 应用，或者之前完全没有使用到 Spring，而你就想用 Spring 的依赖注入这个功能，其实完全是可以的，它的引入不会对其他的组件产生冲突。
 
 废话说完，我们继续。ApplicationContext context = new ClassPathXmlApplicationContext(...) 其实很好理解，从名字上就可以猜出一二，就是在 ClassPath 中寻找 xml 配置文件，根据 xml 文件内容来构建 ApplicationContext。当然，除了 ClassPathXmlApplicationContext 以外，我们也还有其他构建 ApplicationContext 的方案可供选择，我们先来看看大体的继承结构是怎么样的：
+
 ![applicationContext](https://github.com/glc666/ayuantalking-spring/blob/master/images/ApplicationContext.png ,"Application")
 
 ```
